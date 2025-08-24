@@ -530,7 +530,7 @@
     bottom: 100px;
     width: 58px;
     height: 50px;
-    background: url(../img/sty-1.png) center center no-repeat;
+    /* background: url(../img/hero.png) center center no-repeat; */
     animation: RotateMoveSty-3 45s linear infinite;
     transition: 0.5s;
     z-index: -1;
@@ -640,6 +640,7 @@
 .service .service-item .service-icon,
 .service .service-item a {
     transition: 0.5s;
+    height: fit-content;
 }
 
 .service .service-item:hover {
@@ -656,6 +657,14 @@
 .service .service-item:hover a:hover {
     background: var(--bs-primary) !important;
     color: var(--bs-white);
+}
+
+.service-img{
+    max-width: 80px;   /* same as fa-5x */
+  max-height: 80px;  /* keeps it square */
+  object-fit: contain; /* prevent distortion */
+  display: block;
+  margin: 0 auto;  
 }
 
 /*** Service End ***/
