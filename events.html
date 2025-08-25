@@ -58,7 +58,7 @@
                 justify-content: center;
                 outline: none;
                 box-shadow: none;
-                font-size: 0; /* hide 'prev'/'next' text */
+                font-size: 0 !important; /* hide 'prev'/'next' text */
             }
             .owl-nav button.owl-prev { left: 6px; }
             .owl-nav button.owl-next { right: 6px; }
@@ -104,20 +104,7 @@
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="index.html#about" class="nav-item nav-link">About</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-                        <div class="dropdown-menu m-0">
-                                <a href="service/microsofttechnologies.html" class="dropdown-item">Microsoft Technologies</a>
-                                <a href="service/microsofttechnologies.html" class="dropdown-item">SharePoint Development</a>
-                                <a href="service/microsofttechnologies.html" class="dropdown-item">ASP.NET Development</a>
-                                <a href="service/bianddata.html" class="dropdown-item">Power BI Development</a>
-                                <a href="service/cloud.html" class="dropdown-item">Azure Cloud Services</a>
-                                <a href="service/mobiledevelopment.html" class="dropdown-item">Mobile App Development</a>
-                                <a href="service/webtechnologies.html" class="dropdown-item">Web Development</a>
-                                <a href="service/machinelearning.html" class="dropdown-item">Machine Learning & AI</a>
-                                <a href="service/atlassian.html" class="dropdown-item">Atlassian Solutions</a>
-                            </div>
-                    </div>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
                     <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
                     <a href="careers.html" class="nav-item nav-link">Careers</a>
                     <a href="events.html" class="nav-item nav-link active">Events</a>
@@ -332,6 +319,7 @@
                     loop: true,
                     margin: 16,
                     nav: true,
+                    navText: ["",""],
                     dots: true,
                     autoplay: true,
                     autoplayTimeout: 4000,
