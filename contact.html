@@ -3,10 +3,11 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Mailler - SaaS Website Template</title>
+        <title>EpicBliss - Contact Us</title>
+        <link rel="shortcut icon" href="https://www.epicbliss.tech/assets/Front/img/Favicon.png" type="image/png">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="EpicBliss, contact, IT services, Microsoft technologies" name="keywords">
+        <meta content="Contact EpicBliss for comprehensive IT solutions including Microsoft technologies, Power BI development, and cloud services." name="description">
 
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,7 +22,6 @@
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
 
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,6 @@
         </div>
         <!-- Spinner End -->
 
-
         <!-- Navbar Start -->
         <div class="container-fluid p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4 px-lg-5 py-3 py-lg-0">
@@ -53,7 +52,7 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="index.html#about" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu m-0">
@@ -78,9 +77,8 @@
         </div>
         <!-- Navbar End -->
 
-
-         <!-- Header Start -->
-         <div class="container-fluid bg-breadcrumb">
+        <!-- Header Start -->
+        <!-- <div class="container-fluid bg-breadcrumb">
             <ul class="breadcrumb-animation">
                 <li></li>
                 <li></li>
@@ -94,122 +92,99 @@
                 <li></li>
             </ul>
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h1>
+                <h3 class="display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h3>
                 <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
                     <li class="breadcrumb-item active text-primary">Contact</li>
                 </ol>    
             </div>
-        </div>
+        </div> -->
         <!-- Header End -->
 
-
         <!-- Contact Start -->
-        <div class="container-fluid contact py-5">
+        <div class="container-fluid py-5">
             <div class="container py-5">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
-                    <h4 class="text-primary mb-4">Contact Us</h4>
-                    <h1 class="display-5 mb-4">Get In Touch With Us</h1>
-                    <p class="mb-0">Dolor sit amet consectetur, adipisicing elit. Ipsam, beatae maxime. Vel animi eveniet doloremque reiciendis soluta iste provident non rerum illum perferendis earum est architecto dolores vitae quia vero quod incidunt culpa corporis, porro doloribus. Voluptates nemo doloremque cum.
-                    </p>
+                    <h4 class="mb-1 text-primary">Contact Us</h4>
+                    <h1 class="display-5 mb-4">Get In Touch</h1>
+                    <p class="mb-0">Eager to know more? Drop a note; <br> can we help you today? <br> Our team is ready to assist you with your IT solutions needs.</p>
                 </div>
-                <div class="row g-5 align-items-center">
+                <div class="row g-5">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <h2 class="display-5 mb-2">Our Contact Form</h2>
-                        <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                        <div class="contact-form">
+                            <h3 class="mb-4">Say Hello...</h3>
+                            <form id="contact-form" method="post" action="https://www.epicbliss.tech/register-contact">
+                                <input type="hidden" name="csrf_test_name" value="">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Your Name*" id="name" class="form-control" name="name" required="required">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" placeholder="Your Email*" id="email" class="form-control" name="email" required="required">
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" placeholder="Your Subject*" id="subject" class="form-control" name="subject" required="required">
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea placeholder="Your Message*" id="message" class="form-control" name="message" rows="8" required="required"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary rounded-pill py-3 px-5" id="submitButton" name="submit">Send Message</button>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="phone" class="form-control" id="phone" placeholder="Phone">
-                                        <label for="phone">Your Phone</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="project" placeholder="Project">
-                                        <label for="project">Your Project</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="bg-light d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-home fa-2x text-primary"></i></div>
-                            <div class="ms-4">
-                                <h4>Addresses</h4>
-                                <p class="mb-0">123 ranking Street, New York, USA</p>
+                        <div class="contact-info">
+                            <h3 class="mb-4">Message Us</h3>
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-envelope fa-2x text-primary me-3"></i>
+                                </div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p class="mb-0"><a href="mailto:info@epicbliss.tech" class="text-decoration-none">info@epicbliss.tech</a></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="bg-light d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-map-marker-alt fa-2x text-primary"></i></div>
-                            <div class="ms-4">
-                                <h4>Addresses</h4>
-                                <p class="mb-0">123 ranking Street, New York, USA</p>
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fab fa-skype fa-2x text-primary me-3"></i>
+                                </div>
+                                <div>
+                                    <h5>Skype</h5>
+                                    <p class="mb-0"><a href="skype:epicbliss.tech?chat" class="text-decoration-none">epicbliss.tech</a></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="bg-light d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-phone-alt fa-2x text-primary"></i></div>
-                            <div class="ms-4">
-                                <h4>Mobile</h4>
-                                <p class="mb-0">+012 345 67890</p>
-                                <p class="mb-0">+012 345 67890</p>
+                            <h3 class="mb-4 mt-5">Visit Us</h3>
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                                </div>
+                                <div>
+                                    <h5>India</h5>
+                                    <p class="mb-0">1110, Ganesh Glory, Jagatpur Road, Off. SG Highway, Near Nirma University, Ahmedabad, Gujarat 382481</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="bg-light d-flex align-items-center justify-content-center mb-3" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fa fa-envelope-open fa-2x text-primary"></i></div>
-                            <div class="ms-4">
-                                <h4>Email</h4>
-                                <p class="mb-0">info@example.com</p>
-                                <p class="mb-0">info@example.com</p>
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                                </div>
+                                <div>
+                                    <h5>USA</h5>
+                                    <p class="mb-0">205, Henly PI Duluth, GA 30097</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <div class="me-4">
-                                <div class="bg-light d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; border-radius: 50px;"><i class="fas fa-share fa-2x text-primary"></i></div>
+                            <div class="d-flex align-items-start mb-4">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-3"></i>
+                                </div>
+                                <div>
+                                    <h5>Canada</h5>
+                                    <p class="mb-0">805 Yates Dr Milton, ON L9T 0E6</p>
+                                </div>
                             </div>
-                            <div class="d-flex">
-                                <a class="btn btn-lg-square btn-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-lg-square btn-primary rounded-circle mx-2" href=""><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="rounded h-100">
-                            <iframe class="rounded w-100" 
-                            style="height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -217,61 +192,60 @@
         </div>
         <!-- Contact End -->
 
-
         <!-- Footer Start -->
-    <footer id="footer">
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row">
-                    <!-- Company Info -->
-                    <div class="col-lg-4 col-md-6">
-                        <h3 class="text-white">Epic Bliss</h3>
-                        <p>
-                            With over 16 years of experience, EpicBliss delivers comprehensive IT, consulting, and
-                            outsourcing solutions. We empower clients across industries—from finance and healthcare to
-                            retail, education, hospitality, and beyond—with innovative technologies and customer-centric
-                            excellence.
-                        </p>
-                        <p><strong>Email:</strong> info@epicbliss.tech</p>
+        <footer id="footer">
+            <div class="container-fluid copyright py-4">
+                <div class="container">
+                    <div class="row">
+                        <!-- Company Info -->
+                        <div class="col-lg-4 col-md-6">
+                            <h3 class="text-white">Epic Bliss</h3>
+                            <p>
+                                With over 16 years of experience, EpicBliss delivers comprehensive IT, consulting, and
+                                outsourcing solutions. We empower clients across industries—from finance and healthcare to
+                                retail, education, hospitality, and beyond—with innovative technologies and customer-centric
+                                excellence.
+                            </p>
+                            <p><strong>Email:</strong> info@epicbliss.tech</p>
                         </div>
-                    <!-- Our Locations -->
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4 class="text-white">Visit Us</h4>
-                        <p><strong>India:</strong><br> 1110, Ganesh Glory, Jagatpur Road, Off. SG Highway, Near
-                            Nirma University, Ahmedabad, Gujarat 382481</p>
-                        <p><strong>USA:</strong><br> 205,Henly PI Duluth, GA 30097</p>
-                        <p><strong>Canada:</strong><br> 805 Yates Dr Milton, ON L9T 0E6</p>
-                    </div>
-    
-                    <!-- Quick Links -->
-                    <div class="col-lg-2 col-md-6 footer-links">
-                        <h4 class="text-white">Quick Links</h4>
-                        <ul>
-                            <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="index.html">Home</a></li>
-                            <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="#about">About Us</a></li>
-                            <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="service.html">Services</a></li>
-                            <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="portfolio.html">Portfolio</a></li>
-                            <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="careers.html">Careers</a></li>
-                            <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="events.html">Events</a></li>
-                            <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="contact.html">Contact Us</a></li>
-                        </ul>
+                        <!-- Our Locations -->
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4 class="text-white">Visit Us</h4>
+                            <p><strong>India:</strong><br> 1110, Ganesh Glory, Jagatpur Road, Off. SG Highway, Near
+                                Nirma University, Ahmedabad, Gujarat 382481</p>
+                            <p><strong>USA:</strong><br> 205,Henly PI Duluth, GA 30097</p>
+                            <p><strong>Canada:</strong><br> 805 Yates Dr Milton, ON L9T 0E6</p>
                         </div>
-    
-                    <!-- Social Links -->
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4 class="text-white">Follow Us</h4>
-                        <p>Stay connected through our social media platforms:</p>
-                        <div class="social-links mt-3">
-                            <a href="#" class="facebook me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
-                            <a href="#" class="instagram me-3"><i class="fab fa-instagram fa-lg"></i></a>
-                            <a href="#" class="linkedin me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
-                            <a href="#" class="twitter me-3"><i class="fab fa-twitter fa-lg"></i></a>
+        
+                        <!-- Quick Links -->
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4 class="text-white">Quick Links</h4>
+                            <ul>
+                                <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="index.html">Home</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="index.html#about">About Us</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="service.html">Services</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="portfolio.html">Portfolio</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="careers.html">Careers</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="events.html">Events</a></li>
+                                <li><i class="fa fa-chevron-right"></i> <a class="text-white" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+        
+                        <!-- Social Links -->
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4 class="text-white">Follow Us</h4>
+                            <p>Stay connected through our social media platforms:</p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="facebook me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                <a href="#" class="instagram me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                                <a href="#" class="linkedin me-3"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                                <a href="#" class="twitter me-3"><i class="fab fa-twitter fa-lg"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-    </footer>
+        </footer>
         <!-- Footer End -->
         
         <!-- Copyright Start -->
@@ -279,37 +253,34 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                    <span class="text-white"><a href="#"><strong><span>Epic Bliss</span></strong></a> &copy; 2025 All right reserved.</span>
+                        <span class="text-white"><a href="#"><strong><span>Epic Bliss</span></strong></a> &copy; 2025 All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-white">
-                    <!--/*** This template is free as long as you keep the below author's credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author's credit link/attribution link/backlink, ***/-->
+                        <!--/*** This template is free as long as you keep the below author's credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author's credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> -->
+                        <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> -->
                     </div>
                 </div>
             </div>
         </div>
         <!-- Copyright End -->
 
-
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
-        
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
     </body>
 
 </html>
