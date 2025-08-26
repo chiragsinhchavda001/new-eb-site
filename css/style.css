@@ -1,3 +1,11 @@
+:root {
+    --bs-primary: #1E3A8A;   /* Indigo */
+    --bs-secondary: #F59E0B; /* Amber */
+  
+    /* Optional custom aliases */
+    --primary-color: #1E3A8A;
+    --secondary-color: #F59E0B;
+  }
 
 /*** Spinner Start ***/
 /*** Spinner ***/
@@ -980,7 +988,30 @@
 
 /*** copyright Start ***/
 .copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid #757575;
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+
+.btn-primary {
+    background-color: #1E3A8A !important;
+    border-color: #1E3A8A !important;
+}
+  
+.btn-secondary {
+    background-color: #F59E0B !important;
+    border-color: #F59E0B !important;
+}
+
+.text-primary {
+    color: #1E3A8A !important;
+}
+  
+.text-secondary {
+    color: #F59E0B !important;
+}
+
+.bg-primary{
+    background-color:#1E3A8A !important
+}
